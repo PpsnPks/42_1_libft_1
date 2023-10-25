@@ -6,7 +6,7 @@
 /*   By: pphingkh <pphingkh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:37:22 by pphingkh          #+#    #+#             */
-/*   Updated: 2023/10/24 00:28:07 by pphingkh         ###   ########.fr       */
+/*   Updated: 2023/10/25 21:45:28 by pphingkh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	i = 0;
 	all_size = count * size;
-	if (size && count && count >= 4294967295 / size)
+	if (size && count && count >= SIZE_MAX / size)
 		return (0);
 	s = (void *)malloc(all_size);
 	if (!s)
