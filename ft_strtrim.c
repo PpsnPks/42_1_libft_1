@@ -6,7 +6,7 @@
 /*   By: pphingkh <pphingkh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 19:18:29 by pphingkh          #+#    #+#             */
-/*   Updated: 2023/09/21 22:29:50 by pphingkh         ###   ########.fr       */
+/*   Updated: 2023/10/26 03:56:42 by pphingkh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,8 +88,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 // #include <string.h>
 // #include <stdio.h>
+// #include <stdlib.h>
 // int main(void)
 // {
-// 	char *s = ft_strtrim("   xxxtripouille", " x");
-// 	printf("%d",s[11]);
+// 	char *s = ft_strtrim("xxxxt   xxxx x x x", " x");
+// 	unsigned int a = sizeof(s);
+// 	int i = 0;
+// 	for (i = 0;i<=a;i++)
+// 	{
+// 		printf("%d  ",s[i]);
+// 	}
 // }
